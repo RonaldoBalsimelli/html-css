@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* #  = id
+           .  = class
+           :  = pseudo-class
+           :: = pseudo-element
+           >  = children
+        */
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        a{
+            color: black;
+            text-decoration: none; /*tirar o sublinhado dos links*/
+            font-weight: bold; /*a fonte esta em negrito*/
+        }
+        a:visited{
+            color: #867e7e; /*cor do link depois de visitado*/
+        }
+        a:hover{
+            color:#c05389; /*quando passa o mouse em cima o link muda de cor*/
+            text-decoration: underline; /*quando passa o mouse em cima o link fica sublinhado*/
+        }
+        a:active{
+            color: #f75252; /*no click o link fica nesssa cor*/
+        }
+        .especial{
+            background-color: #423f3f;
+            
+        }
+        .especial::before{
+            content: "↝ ";
+
+        }
+        .especial::after{
+            content: " ↜";
+            /*content: " [link]"; /*adicionar algo depois do texto, no caso informando que é um link*/
+            /*text-decoration: none;
+            font-weight: normal;
+            color: #afa5a5;*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial">YouTube</a></li>
+        <li><a href="https://www.yahoo.com" target="_blank">Yahoo</a></li>
+    </ul>
+    
+</body>
+</html>

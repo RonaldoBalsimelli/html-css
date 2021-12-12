@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(48, 48, 48);
+    color: rgb(236, 229, 219);
+    text-align: center;
+}
+
+img{
+    width: 400px;
+    border-radius: 5px;
+}
